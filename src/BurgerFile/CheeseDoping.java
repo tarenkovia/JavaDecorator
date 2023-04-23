@@ -1,3 +1,7 @@
+package BurgerFile;
+
+import BurgerFile.Burger;
+
 public class CheeseDoping extends BurgerDecorator {
     public CheeseDoping(Burger burger) {
         super(burger);
@@ -6,11 +10,11 @@ public class CheeseDoping extends BurgerDecorator {
         return burger.getDescription() + "\nДопинг: Сыр";
     }
 
-    public double getCost() {
-        return burger.getCost() + 20.00;
+    public short getCost() {
+        return (short) (burger.getCost() + 20.00);
     }
 
-    public double getCaloricContent(){
-        return burger.getCaloricContent() + 84.00;
+    public short getCaloricContent(){
+        return (short) (burger.getCaloricContent() + 84.00);
     }
 }

@@ -1,3 +1,8 @@
+package DrinkFile;
+
+import DrinkFile.Drink;
+import DrinkFile.DrinkDecorator;
+
 public class SyrupDrinkDoping extends DrinkDecorator {
     public SyrupDrinkDoping(Drink drink) {
         super(drink);
@@ -7,11 +12,11 @@ public class SyrupDrinkDoping extends DrinkDecorator {
         return drink.getDescription() + "\nДопинг: Сироп";
     }
 
-    public double getCost() {
-        return drink.getCost() + 45.00;
+    public short getCost() {
+        return (short) (drink.getCost() + 45);
     }
 
-    public double getCaloricContent(){
-        return drink.getCaloricContent() + 40.00;
+    public short getCaloricContent(){
+        return (short) (drink.getCaloricContent() + 40);
     }
 }

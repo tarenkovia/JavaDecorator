@@ -1,3 +1,7 @@
+package DrinkFile;
+
+import DrinkFile.Drink;
+
 public abstract class DrinkDecorator implements Drink {
     protected Drink drink;
 
